@@ -24,13 +24,13 @@ nav{
     text-align: center;
     border-top: 1px solid #751b1b;
     border-bottom: 1px solid #751b1b;
-    height: 40px;
 } 
 .content{
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
+    padding-top: 10px;
 }
 .socials{
     width: 100%;
@@ -83,4 +83,68 @@ height: 155px;
 .gplus:hover{
     background-color: #d95333;
     cursor: pointer;
+}
+footer{
+    text-align: center;
+    background-color: #222222;
+    padding: 30px;
+}
+.sticky{
+    width: 100%;
+    position:fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+ol{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+
+}
+ol a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+}
+ol > li{
+    float: left;
+    width: 150px;
+    height: 40px;
+    border-right: 2px #751b1b solid;
+}
+ol > li:first-child{
+    border-left: 2px #751b1b solid;
+}
+ol > li:hover{
+    background-color: #b23e3e;
+    cursor: pointer;
+}
+ol > li:hover a
+{
+    color: black;
+}
+ol > li > ul{
+    padding: 0px;
+    margin: 0px;
+    height: 40px;
+    list-style-type: none;
+    display: none;
+}
+ol > li:hover > ul{
+    display: block;
+}
+
+ol > li > ul > li{
+    background-color: #cf6969;
+    position: relative;
+    z-index: 100;
+    border-top: 2px dashed #751b1b;
+}
+ol > li > ul > li:hover{
+    background-color: #751b1b;
 }

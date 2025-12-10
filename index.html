@@ -7,6 +7,7 @@
 <meta name="keywords" content="stronka, retro, gra, gry"/>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rouge+Script&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="fontello-248b7f95/css/fontello.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 </head>
@@ -15,11 +16,43 @@
     <div class="header">
         <div class="logo">
            <img src="img/pad.png" alt="pad" style="float:left"/>
-            <span style="color: #c34f4f">retro</span>granie.com
+            <span style="color: #c34f4f">siwek</span>granie.com
             <div style="clear: both;"></div>
         </div>
     </div>
-    <nav>    </nav>
+    <nav>   
+        <ol>
+            <li><a href="#">Strona główna</a></li>
+            <li><a href="#">Klasyczek</a>
+                <ul>
+                    <li><a href="#">Contra</a></li>
+                    <li><a href="#">Gra2</a></li>
+                    <li><a href="#">Gra3</a></li>
+                    <li><a href="#">Gra4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Starocie</a>
+                <ul>
+                    <li><a href="#">gra5</a></li>
+                    <li><a href="#">gra6</a></li>
+                    <li><a href="#">gra7</a></li>
+                    <li><a href="#">gra8</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Retro zabawa</a>
+                <ul>
+                    <li><a href="#">gra9</a></li>
+                    <li><a href="#">gra 10</a></li>
+                    <li><a href="#">gra 11</a></li>
+                    <li><a href="#">g 12</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Śpiewaj ze mną</a></li>
+        </ol>
+    </nav>
+
+
+
     <div class="content">
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus, mauris sed dignissim scelerisque, ligula nisi blandit nisi, quis commodo ante erat ac mauris. Aliquam ultricies ligula nibh, eget eleifend est cursus vel. Duis non nibh a eros aliquet bibendum a et odio. Mauris lacus quam, auctor in turpis at, ultricies mattis urna. Donec maximus non arcu nec malesuada. Maecenas feugiat faucibus ligula sit amet ultrices. Nulla imperdiet viverra maximus. Vestibulum rutrum quam dui. Ut porttitor tempor augue id euismod. Vestibulum sodales ligula vel tellus pellentesque, ac fringilla dolor vestibulum. Pellentesque eget odio nec nisl commodo lacinia. Integer in mauris sed nisi congue placerat et et risus. Nulla facilisi.</p>
 
@@ -41,14 +74,49 @@
 </div>
 <div class="socials">
     <div class="socialdiv">
-        <div class="fb">fb</div>
-        <div class="yt">yt</div>
-        <div class="tw">tw</div>
-        <div class="gplus">gplus</div>
+        <div class="fb">
+            <i class="icon-facebook"></i>
+        </div>
+        <div class="yt">
+            <i class="icon-youtube-play"></i>
+        </div>
+        <div class="tw">
+            <i class="icon-twitter"></i>
+        </div>
+        <div class="gplus">
+            <i class="icon-gplus"></i>
+        </div>
         <div style="clear: both;"></div>
     </div>
 </div>
+<footer>
+Retrogranie.com &copy; 2025 grudzień, tak się dzieje historia
+</footer>
+<script src="jquery-3.7.1.min.js"></script>
 
+<script>
+
+	$(document).ready(function() {
+	var NavY = $('nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('nav').addClass('sticky');
+	} else {
+		$('nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
 
 </div>
 </body>
