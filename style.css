@@ -17,3 +17,70 @@ body{
     margin-right: auto;
     margin-left: auto;
 }
+nav{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #c34f4f;
+    text-align: center;
+    border-top: 1px solid #751b1b;
+    border-bottom: 1px solid #751b1b;
+    height: 40px;
+} 
+.content{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+.socials{
+    width: 100%;
+    text-align: center;
+    background-color: #292929;
+}
+.socialdiv{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yt{
+    float: left;
+    width: 250px;
+    height: 155px;
+}
+.yt:hover{
+    background-color: #d94348;
+    cursor: pointer;
+}
+
+
+.fb{
+    float: left;
+    width: 250px;
+    height: 155px;
+}
+.fb:hover{
+    background-color: #4668b3;
+    cursor: pointer;
+}
+
+
+.tw{
+    float: left;
+    width: 250px;
+    height: 155px;
+}
+.tw:hover{
+    background-color: #3095d3;
+    cursor: pointer;
+}
+
+.gplus{
+    float: left;
+width: 250px;
+height: 155px;
+}
+.gplus:hover{
+    background-color: #d95333;
+    cursor: pointer;
+}
